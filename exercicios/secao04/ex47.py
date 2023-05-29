@@ -1,0 +1,5 @@
+numero = str(input('Informe um número entre 1000 e 9999: '))
+print(f'{numero[0]}')
+print(f'{numero[1]}')
+print(f'{numero[2]}')
+print(f'{numero[3]}')
