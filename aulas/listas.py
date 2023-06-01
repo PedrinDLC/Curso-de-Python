@@ -124,6 +124,83 @@ print(curso)
 curso = curso.split(',')
 print(curso)
 
+# Convertendo uma lista em uma string
+
+lista6 = ['Programação', 'em', 'Python:', 'Essencial']
+print(lista6)
+
+# Abaixo estamos falando: Pega a lista6, coloca espaço entre cada elemento e transforma em uma string
+curso = ' '.join(lista6)
+print(curso)
+
+# Abaixo estamos falando: Pega a lista6, coloca cifrão entre cada elemento e transforma em uma string
+curso = '$'.join(lista6)
+print(curso)
+
+# Podemos realmente qualquer tipo de dado em uma lista, inclusive misturando esses dados
+
+lista6 = [1, 2.34, True, 'Deek', 'd', [1, 2, 3], 45345345345]
+print(lista6)
+print(type(lista6))
+
+# Iterando sobre listas
+
+# Exemplo 1 - Utilizando for
+
+soma = 0
+for elemento in lista4:
+    print(elemento)
+    soma = soma + elemento
+print(soma)
+
+# Exemplo 2 - Utilizando while
+
+carrinho = []
+produto = ''
+
+while produto != 'sair':
+    print('Adicone um produto na lista ou digite \'sair\' para sair: ')
+    produto = input()
+    if produto != 'sair':
+        carrinho.append(produto)
+
+for produto in carrinho:
+    print(produto)
+
+# Utilizando variaveis em listas
+
+numeros = [1, 2, 3, 4, 5]
+print(numeros)
+
+num1 = 1
+num2 = 2
+num3 = 3
+num4 = 4
+num5 = 5
+
+numero = [num1, num2, num3, num4, num5]
+print(numeros)
+
+# Fazemos acesso aos elementos de forma indexada
+
+#           0         1        2         3
+cores = ['verde', 'amarelo', 'azul', 'branco']
+
+print(cores[0])  # verde
+print(cores[1])  # amarelo
+print(cores[2])  # azul
+print(cores[3])  # branco
+
+# Fazer acesso aos elementos de forma indexada inversa
+# OBS: Para entender melhor o indice negativo, pense na lista como um circulo, onde
+# o final de um elemento está ligado ao inicio da lista
+
+print(cores[-1])  # branco
+print(cores[-2])  # azul
+print(cores[-3])  # amarelo
+print(cores[-4])  # verde
+# print(cores[-5])  # Erro, pois não existe indice -5
+
 """
 type([])
 
